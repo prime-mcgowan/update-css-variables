@@ -6,6 +6,7 @@
     <link rel="icon" href="https://fav.farm/🔥" />
   </head>
   <body>
+    <!-- hl is for highlight -->
     <h2>Update CSS Variables with <span class="hl">JS</span></h2>
 
     <div class="controls">
@@ -38,9 +39,21 @@
     <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" />
 
     <style>
-      /*
-      misc styles, nothing to do with CSS variables
-    */
+      :root {
+        --base: #ffc600;
+        --spacing: 10px;
+        --blur: 10px;
+      }
+
+      .hl {
+        color: var(--base);
+      }
+
+      img {
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+      }
 
       body {
         text-align: center;
