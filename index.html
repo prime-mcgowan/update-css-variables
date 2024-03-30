@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Scoped CSS Variables and JS</title>
     <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- hl is for highlight -->
@@ -38,55 +39,8 @@
 
     <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" />
 
-    <style>
-      :root {
-        --base: #ffc600;
-        --spacing: 10px;
-        --blur: 10px;
-      }
+    <style></style>
 
-      .hl {
-        color: var(--base);
-      }
-
-      img {
-        padding: var(--spacing);
-        background: var(--base);
-        filter: blur(var(--blur));
-      }
-
-      body {
-        text-align: center;
-        background: #193549;
-        color: white;
-        font-family: "helvetica neue", sans-serif;
-        font-weight: 100;
-        font-size: 50px;
-      }
-
-      .controls {
-        margin-bottom: 50px;
-      }
-
-      input {
-        width: 100px;
-      }
-    </style>
-
-    <script>
-      const inputs = document.querySelectorAll(".controls input");
-
-      function handleUpdate() {
-        const suffix = this.dataset.sizing || "";
-        document.documentElement.style.setProperty(
-          `--${this.name}`,
-          this.value + suffix
-        );
-        // console.log(suffix);
-        // console.log(this.value);
-      }
-
-      inputs.forEach((input) => input.addEventListener("input", handleUpdate));
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
