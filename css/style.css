@@ -83,6 +83,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* default values for the css variables: spacing, blur and base */
 :root {
   --base: #ffc600;
   --spacing: 10px;
@@ -90,10 +92,12 @@ textarea {
 }
 
 .hl {
+  /* when you want to use a variable in CSS you have to include - var  and -- */
   color: var(--base);
 }
 
 img {
+  /* when you want to use a variable in CSS you have to include - var  and -- */
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
