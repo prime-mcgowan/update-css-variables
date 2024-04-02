@@ -24,7 +24,7 @@ Play with spacing, blur and base-color for an image.
 
 ## Implementation Details
 
-The Drum Kit Web App is implemented using HTML, JavaScript, and CSS for styling.
+The app is implemented using HTML, JavaScript, and CSS for styling.
 
 The app consists of an event listener and one main function:
 
