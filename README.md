@@ -2,6 +2,8 @@
 
 Play with spacing, blur and base-color for an image.
 
+![Screen Shot 2024-04-02 at 9 51 54 AM](https://github.com/prime-mcgowan/update-css-variables/assets/113257735/0241c821-2a0c-4e37-97d8-2908905c4e56)
+
 ## Technologies Used
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
