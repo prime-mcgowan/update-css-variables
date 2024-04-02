@@ -1,9 +1,6 @@
-## Drum Kit Web App
-
 ## Description
 
-The Drum Kit app is a simple web application that allows users to hit specific keys on their keyboard and hear the
-sounds associated with the letter.
+Play with spacing, blur and base-color for an image.
 
 ## Technologies Used
 
@@ -15,29 +12,21 @@ sounds associated with the letter.
 
 ## Features
 
-- Interactive Buttons: The "buttons" have an assigned letter which is attached to a sound...the user can hear the sound by pressing the specific letters on their keyboard
-- Responsive Design: The app is designed to be responsive, ensuring a user-friendly experience on both desktop and mobile devices.
+- Spacing range slider
+- Blur range slider
+- Base color picker
 
 ## How to Use
 
 1. Open the web application in your preferred web browser.
-2. Press letters: A, S, D, F, G, H, J, K and/or L to hear the sounds
+2. Use your mouse to move the Spacing and Blur sliders
+3. Click on the Base Color bar and choose any color you like from the default color picker
 
 ## Implementation Details
 
 The Drum Kit Web App is implemented using HTML, JavaScript, and CSS for styling.
 
-The app consists of two main functions:
+The app consists of an event listener and one main function:
 
-- playSound: When a key is pressed the playSound(e) function is run. The correct key and audio is selected by using a querySelector
-  and grabbing the specific key and audio using an assigned key-code. The sound is also rewound quickly so a user can
-  click the sound in quick succession by adding .currentTime = 0 to audio. The 'playing' style is added to the letter box
-  by putting a .classList.add("playing") on key.
-- removeTransiition: This function looks for a propertyName that is equal to "transform" when a key is clicked...and the end of the
-  transform time the "playing" styles are removed. This function is triggered when a key is pressed because an eventListener
-  was attached to each individual key.
-
-## Usage
-
-To use this web application, simply open the index.html file in a web browser.
-Use your keyboard to click on the letter and hear the sounds!!
+- The event listener is listening for a change on the inputs. When there is a change the handleUpdate() function will run
+- handleUpdate: sets the name for the element selected along with the new value and attaches a suffix if appropriate.
